@@ -1,0 +1,111 @@
+
+body{
+  background-color: rgb(143, 238, 238);
+}
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+img{
+  border-radius: 50%;
+  width: 220px; height: 220px;
+  
+}  
+hr {
+border-style: none; 
+border-top-style: dotted;
+border-color: grey;
+border-width:5px;
+margin-top: 20px;
+width: 100%;
+}
+.profile-detail {
+background-color: white; 
+width: 60%; 
+margin: 5% auto 5% auto;
+padding: 5%;
+border-radius: 15px;
+box-shadow: 5px 5px 5px #333333
+}
+.table-borderless {
+
+letter-spacing: 1px;
+}
+
+.table-borderless td {
+border: none;
+vertical-align: top
+}
+
+.table-border {
+border-collapse: collapse;
+border: 2px solid rgb(140 140 140);
+
+letter-spacing: 1px;
+background-color: beige;
+}
+
+form{
+ 
+ padding: 10px;
+}
+
+table{
+  margin: auto;
+}
+h1,h2{
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  margin: auto;
+  width: 600px;
+}
+
+.test{
+  
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+.submit {
+  background-color: #04AA6D;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

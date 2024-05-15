@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 3.1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="profile-detail">
+        <h1 >Student list of Today </h1>
+    
+   
+    <table  >
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                    Phone Number
+                </th>
+                <th>
+                    Email
+                </th>
+            </tr>
+        </thead>
+        <%for (var i=0 ; i < row.length ; i++) {%>
+        <tr>
+            <td><%=row[i].id%></td>
+            <td><%=row[i].name%></td>
+            <td><%=row[i].age%></td>
+            <td><%=row[i].phone%></td>
+            <td><%=row[i].email%></td>
+
+        </tr>
+     
+        <%}%>
+    </table>
+
+    <hr>
+
+    <h2>Registration Form</h2>
+    <div class="flex-container"  >
+        
+        <form action="/students" method="post">
+            <div class="test">
+
+            
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+           
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age">
+        </div>
+        <div class="test">
+
+       
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone">
+        
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+          
+            
+        </div>
+        <button type="submit" class ="submit">Add Student</button>
+        </form>
+    </div>
+</div>
+
+
+</body>
+
+</html>
